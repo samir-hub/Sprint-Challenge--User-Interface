@@ -47,6 +47,26 @@ table {
 	border-spacing: 0;
 }
 
+@keyframes grayOut {
+    from{
+      background-color: white;
+      border-radius: 2px;
+    }
+    to{
+      background-color: gainsboro;
+      border-radius: 2px;
+    }
+  }
+
+  @keyframes lambdaRed {
+    from{
+      background: white;
+    }
+    to{
+      background: crimson;
+    }
+  }
+
 * {
     box-sizing: border-box;
 }
@@ -143,4 +163,136 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+header {
+	display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+header a {
+	text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    animation: grayOut .3s;
+}
+
+.logo:hover {
+    animation: lambdaRed 3s;
+}
+
+.top-content {
+    margin-top: 20px;
+}
+
+.top-content h2 {
+    font-weight: bold;
+}
+
+.middle-content h2 {
+    font-weight: bold;
+}
+
+.boxes .box.box1 {
+    background: teal;
+}
+
+.boxes .box.box2 {
+    background: gold;
+}
+.boxes .box.box3 {
+    background: cadetblue;
+}
+.boxes .box.box4 {
+    background: coral;
+}
+.boxes .box.box5 {
+    background: crimson;
+}
+.boxes .box.box6 {
+    background: forestgreen;
+}
+.boxes .box.box7 {
+    background: darkorchid;
+}
+.boxes .box.box8 {
+    background: hotpink;
+}
+.boxes .box.box9 {
+    background: indigo;
+}
+.boxes .box.box10 {
+    background: dodgerblue;
+}
+
+.bottom-content h2 {
+    font-weight: bold;
+}
+
+.top-content2 {
+    height: 30px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px dashed black;
+    justify-content: space-between;
+}
+
+.text-content2 {
+    width: 48%;
+    padding: 20px 0 20px 20px;
+    border-bottom: 1px dashed black;
+}
+
+.text-content2 h3 {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.text-content2 button {
+    margin-top: 10px; 
+    border: 2px solid;
+	width: 150px;
+	height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+	background: white;
+	border-radius: 10px;
+	text-align: center;
+}
+.bottom-content {
+    margin: 30px 0 30px 19px;
+}
+
+.text-container2 h2 {
+    font-weight: bold;
+}
+
+.bottom-content-text h3 {
+    font-weight: bold;
+}
+
+.bottom-content .text-container {
+    width: 30%;
+}
+
+.top-image-products {
+    width: 800px;
+    height: 200px;
+}
+
+.main-content .text-content2 img {
+    width: 370px;
+    height: 236px;
 }
