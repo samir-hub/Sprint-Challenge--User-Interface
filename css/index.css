@@ -47,6 +47,26 @@ table {
 	border-spacing: 0;
 }
 
+@keyframes grayOut {
+    from{
+      background-color: white;
+      border-radius: 2px;
+    }
+    to{
+      background-color: gainsboro;
+      border-radius: 2px;
+    }
+  }
+
+  @keyframes lambdaRed {
+    from{
+      background: white;
+    }
+    to{
+      background: crimson;
+    }
+  }
+
 * {
     box-sizing: border-box;
 }
@@ -155,7 +175,15 @@ header {
 
 header a {
 	text-decoration: none;
-	color: black;
+    color: black;
+}
+
+a:hover {
+    animation: grayOut .3s;
+}
+
+.logo:hover {
+    animation: lambdaRed 3s; 
 }
 
 .top-content {
@@ -257,4 +285,14 @@ header a {
 
 .bottom-content .text-container {
     width: 30%;
+}
+
+.top-image-products {
+    width: 800px;
+    height: 200px;
+}
+
+.main-content .text-content2 img {
+    width: 370px;
+    height: 236px;
 }
